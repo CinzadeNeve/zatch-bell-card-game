@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zatch Bell! Card Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    
+    <main class="flex flex-col h-screen w-screen justify-center items-center">
+
+
+        <h2 class="text-[2rem]">
+            Escolha seu livro de deck pré-montado:
+        </h2>
+        <div class="flex flex-col items-center mt-[1.5rem]">
+            <figure class="h-[8rem] w-[8rem] rounded-[.5rem] overflow-hidden">
+                <img class="h-full w-full object-center object-cover" src="./public/src/img/others/livro_start_1.webp" alt="" />
+            </figure>
+            <h4 class="mt-[.4rem]">Starter Set #1</h4>
+
+            <button class="mt-[1rem] bg-[#F5282B] hover:bg-[#190000] transition-[background] duration-[.3s] linear p-[.5rem_2rem] rounded-[.2rem] text-white font-bold">Selecionar</button>
+        </div>
+    </main>
+
+    <script type="module" src="./dist/bundle.js" defer></script>
+</body>
+</html>
